@@ -68,6 +68,18 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    Align(
+                      alignment: AlignmentDirectional(0.0, -1.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(24.0),
+                        child: Image.asset(
+                          'assets/images/Untitled.png',
+                          width: double.infinity,
+                          height: 100.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
                     Expanded(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
