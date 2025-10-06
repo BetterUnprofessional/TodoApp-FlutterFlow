@@ -51,6 +51,8 @@ class _LoginWidgetState extends State<LoginWidget>
 
     _model.loginPasswordFieldTextController ??= TextEditingController();
     _model.loginPasswordFieldFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -29,6 +29,8 @@ class _CompletedPageWidgetState extends State<CompletedPageWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => CompletedPageModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
